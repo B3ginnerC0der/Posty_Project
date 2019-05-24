@@ -28,7 +28,7 @@
                     <p>{{post.body}}</p>
                     <div> 
                         <a href="edit">Edit</a> |
-                        <a href="delet">Delet</a>
+                        <a href="{{ url_for('post_delete', id=post.id) }}">Delet</a>
                     </div>
                 </div>
             </div>
