@@ -58,5 +58,5 @@ def post_update(id):
     elif request.method == 'GET':
         post = post_store.get_by_id(id)
         return render_template('post-update.html', post=post)
-app.run()
+
 
